@@ -184,6 +184,11 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
@@ -487,7 +492,73 @@
       </article>
 
 
+      <!--
+  - #EXPERIENCE
+-->
+      <article class="experience" data-page="experience">
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
 
+        <section class="timeline experience-timeline">
+
+          <ol class="timeline-list">
+
+            <!-- Enscyd Technologies -->
+            <li class="timeline-item full-time">
+              <h4 class="h4 timeline-item-title">Web Developer — Enscyd Technologies Pvt. Ltd.</h4>
+              <span class="timeline-item-date">(Current Job)</span>
+              <p class="timeline-text">
+                Developing and maintaining modern, responsive, high-performance web applications.
+                Building user interfaces with React.js, Next.js, and Tailwind CSS, integrating backend APIs using
+                Laravel,
+                and ensuring clean, scalable, optimized code. Collaborating with teams to deliver user-centric solutions
+                and
+                improve performance following industry best practices.
+              </p>
+            </li>
+
+            <!-- Devrolin Intern -->
+            <li class="timeline-item internship">
+              <h4 class="h4 timeline-item-title">Next.js Intern — Devrolin</h4>
+              <span class="timeline-item-date">Aug 2025 — Sep 2025</span>
+              <p class="timeline-text">
+                Developed interactive and responsive web applications using Next.js, integrating REST APIs for dynamic
+                content.
+                Built reusable components and optimized frontend performance. Collaborated with the development team to
+                ensure seamless user experience and maintainable code structure. Gained advanced experience in modern
+                frontend development practices and API integration.
+              </p>
+            </li>
+
+            <!-- YoungDev Intern -->
+            <li class="timeline-item internship">
+              <h4 class="h4 timeline-item-title">React.js Intern — YoungDev</h4>
+              <span class="timeline-item-date">Sep 2024 — Nov 2024</span>
+              <p class="timeline-text">
+                Worked on real-world frontend projects using React Hooks, Redux, and modular component architecture.
+                Built reusable UI components, improved state management logic, and optimized application performance.
+                Strengthened frontend engineering skills and deepened understanding of React best practices.
+              </p>
+            </li>
+
+            <!-- CodSoft Intern -->
+            <li class="timeline-item internship">
+              <h4 class="h4 timeline-item-title">Frontend Intern — CodSoft</h4>
+              <span class="timeline-item-date">Aug 2023 — Oct 2023</span>
+              <p class="timeline-text">
+                Contributed to developing responsive and user-friendly web pages using HTML, CSS, and JavaScript.
+                Improved UI layouts, implemented clean code principles, and gained a strong understanding of frontend
+                workflows.
+                Built a solid foundation in web development and UI/UX practices.
+              </p>
+            </li>
+
+
+
+          </ol>
+        </section>
+      </article>
 
 
       <!--
@@ -500,252 +571,207 @@
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
+
         <section class="projects">
 
-          <ul class="filter-list">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
 
           <ul class="project-list">
 
-            
-             <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- Bannu Gul -->
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://bannu-gul-customer-web.vercel.app/">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project12.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/project12.png" alt="Bannu Gul BP Restaurant" loading="lazy">
                 </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Bannu Gul BP Restaurant</h3>
+                  <p class="project-category">Web Development</p>
+                  <div class="project-tech">
+                    <span class="tech-badge react">React.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge firebase">Firebase</span>
+                    <span class="tech-badge api">REST API</span>
+                    <span class="tech-badge laravel">Laravel</span>
 
-                <h3 class="project-title">Bannu Gul BP Restaurant</h3>
-                <p class="project-category">Web development</p>
-             
+                  </div>
+                </div>
               </a>
             </li>
 
-
-
-
-
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- Quick Cart -->
+            <li class="project-item active" data-filter-item data-category="web design">
               <a href="https://quick-cart-nextjs-eight.vercel.app/">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project7.png" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project7.png" alt="Quick Cart" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Quick Cart</h3>
-
-                <p class="project-category">Web design</p>
-
+                <div class="project-content">
+                  <h3 class="project-title">Quick Cart</h3>
+                  <p class="project-category">Web Design</p>
+                  <div class="project-tech">
+                    <span class="tech-badge nextjs">Next.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge typescript">TypeScript</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- BIIT -->
+            <li class="project-item active" data-filter-item data-category="web design">
               <a href="https://pmas-biit.netlify.app">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project2.png" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project2.png" alt="BIIT (PMAS)" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">BIIT(PMAS)</h3>
-
-                <p class="project-category">Web design</p>
-
+                <div class="project-content">
+                  <h3 class="project-title">BIIT (PMAS)</h3>
+                  <p class="project-category">Web Design</p>
+                  <div class="project-tech">
+                    <span class="tech-badge html">HTML</span>
+                    <span class="tech-badge css">CSS</span>
+                    <span class="tech-badge bootstrap">Bootstrap</span>
+                    <span class="tech-badge js">JavaScript</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- Big Bite -->
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://big-bite.netlify.app">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project1.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project1.png" alt="Big Bite" loading="lazy">
                 </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Big Bite</h3>
+                  <p class="project-category">Web Development</p>
+                  <div class="project-tech">
+                    <span class="tech-badge html">HTML</span>
+                    <span class="tech-badge css">CSS</span>
+                    <span class="tech-badge bootstrap">Bootstrap</span>
 
-                <h3 class="project-title">Big Bite</h3>
-
-                <p class="project-category">Web development</p>
-
+                    <span class="tech-badge js">JavaScript</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="">
-
+            <!-- Rider Portal -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project8.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project8.png" alt="Rider Portal" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Rider Portal</h3>
-
-                <p class="project-category">Web development</p>
-
+                <div class="project-content">
+                  <h3 class="project-title">Rider Portal</h3>
+                  <p class="project-category">Web Development</p>
+                  <div class="project-tech">
+                    <span class="tech-badge react">React.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge laravel">Laravel</span>
+                    <span class="tech-badge mysql">MySQL</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="">
-
+            <!-- Admin Panel -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project10.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project10.png" alt="Admin Panel" loading="lazy">
                 </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Admin Panel</h3>
+                  <p class="project-category">Web Development</p>
+                  <div class="project-tech">
+                    <span class="tech-badge react">React.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge laravel">Laravel</span>
+                    <span class="tech-badge mysql">MySQL</span>
 
-                <h3 class="project-title">Admin Panel</h3>
-
-                <p class="project-category">Web development</p>
-
+                  </div>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="">
-
+            <!-- Vendor Panel -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project11.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project11.png" alt="Vendor Panel" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Vendor Panel</h3>
-
-                <p class="project-category">Web development</p>
-
+                <div class="project-content">
+                  <h3 class="project-title">Vendor Panel</h3>
+                  <p class="project-category">Web Development</p>
+                  <div class="project-tech">
+                    <span class="tech-badge react">React.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge mysql">MySQL</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="sushilab.netlify.app">
-
+            <!-- FOOD LAB -->
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="https://sushilab.netlify.app">
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/project6.png" alt="FOOD LAB" loading="lazy">
                 </figure>
+                <div class="project-content">
+                  <h3 class="project-title">FOOD LAB</h3>
+                  <p class="project-category">Web Design</p>
+                  <div class="project-tech">
+                    <span class="tech-badge html">HTML</span>
+                    <span class="tech-badge css">CSS</span>
 
-                <h3 class="project-title">FOOD LAB</h3>
-
-                <p class="project-category">Web design</p>
-
+                    <span class="tech-badge js">JavaScript</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- SWAG KICK -->
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://swagykick.netlify.app">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project5.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/project5.png" alt="SWAG KICK" loading="lazy">
                 </figure>
+                <div class="project-content">
+                  <h3 class="project-title">SWAG KICK</h3>
+                  <p class="project-category">Web Development</p>
+                  <div class="project-tech">
+                    <span class="tech-badge html">HTML</span>
+                    <span class="tech-badge css">CSS</span>
+                    <span class="tech-badge bootstrap">Bootstrap</span>
 
-                <h3 class="project-title">SWAG KICK</h3>
-
-                <p class="project-category">Web development</p>
-
+                    <span class="tech-badge js">JavaScript</span>
+                  </div>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- NEW LOOK -->
+            <li class="project-item active" data-filter-item data-category="web design">
               <a href="https://look-new.netlify.app">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project4.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/project4.png" alt="NEW LOOK" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">NEW LOOK</h3>
-
-                <p class="project-category">Web design</p>
-
+                <div class="project-content">
+                  <h3 class="project-title">NEW LOOK</h3>
+                  <p class="project-category">Web Design</p>
+                  <div class="project-tech">
+                    <span class="tech-badge react">React.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                  </div>
+                </div>
               </a>
             </li>
-
-
 
           </ul>
 
         </section>
-
       </article>
 
 

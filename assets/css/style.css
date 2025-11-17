@@ -1,9 +1,127 @@
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
 
+.project-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(30, 30, 30, 0.6); /* semi-transparent dark */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.4s, background 0.3s;
+  backdrop-filter: blur(10px); /* glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
+  cursor: pointer;
+}
 
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 255, 255, 0.1);
+  background: rgba(40, 40, 40, 0.8);
+}
 
+.project-item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
+  gap: 10px;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.4s;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-item:hover .project-img img {
+  transform: scale(1.07);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.project-category {
+  display: none; /* keep hidden for filtering */
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.project-tech .tech-badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.project-tech .tech-badge:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Tech colors (optional glow effect) */
+.tech-badge.react { background-color: rgba(97, 218, 251, 0.7); color: #000; }
+.tech-badge.tailwind { background-color: rgba(56, 189, 248, 0.7); color: #000; }
+.tech-badge.firebase { background-color: rgba(255, 203, 43, 0.7); color: #000; }
+.tech-badge.api { background-color: rgba(74, 222, 128, 0.7); color: #000; }
+.tech-badge.laravel { background-color: rgba(240, 83, 64, 0.7); color: #fff; }
+.tech-badge.php { background-color: rgba(119, 123, 179, 0.7); color: #fff; }
+.tech-badge.mysql { background-color: rgba(0, 117, 143, 0.7); color: #fff; }
+.tech-badge.bootstrap { background-color: rgba(121, 82, 179, 0.7); color: #fff; }
+.tech-badge.typescript { background-color: rgba(49, 120, 198, 0.7); color: #fff; }
+.tech-badge.html { background-color: rgba(227, 79, 38, 0.7); color: #fff; }
+.tech-badge.css { background-color: rgba(38, 77, 228, 0.7); color: #fff; }
+.tech-badge.js { background-color: rgba(240, 219, 79, 0.7); color: #000; }
+.tech-badge.nodejs { background-color: rgba(60, 135, 58, 0.7); color: #fff; }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .project-img { height: 150px; }
+  .project-item a { padding: 12px; }
+}
+
+@media screen and (max-width: 480px) {
+  .project-img { height: 130px; }
+  .project-title { font-size: 1rem; }
+  .project-tech .tech-badge { font-size: 0.65rem; padding: 4px 8px; }
+}
 
 
 
