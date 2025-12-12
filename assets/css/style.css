@@ -1,6 +1,119 @@
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
+.section-title {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Grid */
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* Card */
+.skill-box {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+/* Golden border hover */
+.skill-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--vegas-gold), #b8860b);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.skill-box:hover::before {
+  opacity: 1;
+}
+
+.skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.28);
+}
+
+/* Animated floating */
+.floating {
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Header */
+.gradient-icon {
+  font-size: 2rem;
+  color: var(--vegas-gold); /* GOLD ICON */
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.skill-header h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Tags */
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* GOLD TEXT TAGS (Dark Background) */
+.skill-tag {
+  padding: 7px 14px;
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.35); /* Dark glass */
+  border: 1px solid rgba(212, 175, 55, 0.35); /* Subtle gold border */
+
+  color: var(--vegas-gold); /* GOLD TEXT */
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+/* Hover effect — smooth gold glow */
+.skill-tag:hover {
+  border-color: var(--vegas-gold);
+  color: var(--vegas-gold);
+  transform: translateY(-3px) scale(1.05);
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.25);
+}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
