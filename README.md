@@ -1,4 +1,4 @@
-# Aqib Mansoor – Personal Portfolio
+# Fahad Sohail – Personal Portfolio
 
 Welcome to my personal portfolio! This website highlights my professional journey, showcases my projects, and provides an easy way to connect with me. It’s designed to give visitors a clear picture of my work, skills, and experience.
 
@@ -14,4 +14,4 @@ Welcome to my personal portfolio! This website highlights my professional journe
 
 ## 🌐 Explore
 
-Check out my portfolio online: https://aqibfolio.vercel.app
+Check out my portfolio online: (https://portfolio-site-amber-xi.vercel.app/)
