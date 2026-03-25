@@ -14,4 +14,4 @@ Welcome to my personal portfolio! This website highlights my professional journe
 
 ## 🌐 Explore
 
-Check out my portfolio online: [https://aqibfolio.vercel.app](https://portfolio-site-amber-xi.vercel.app/)
+Check out my portfolio online: (https://portfolio-site-amber-xi.vercel.app/)
